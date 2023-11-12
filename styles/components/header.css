@@ -1,0 +1,156 @@
+.brand-title {
+  color: var(--white);
+  margin-top: 0.625rem;
+  margin-left: 6%;
+  cursor: pointer;
+  font-family: var(--f1);
+}
+
+.brand-title img {
+  transition: transform 2s ease;
+  width: 50px;
+}
+
+.brand-title:hover img {
+  transform: rotate(360deg);
+}
+
+.brand-title:not(:hover) img {
+  transform: rotate(0deg);
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--blue);
+  color: var(--white);
+  z-index: 1000;
+}
+
+.navbar-links {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: fit-content;
+  left: -100%;
+  top: 65px;
+  text-align: center;
+  font-family: var(--f2);
+  font-size: 1.125rem;
+  background-color: var(--blue);
+  transition: 0.4s;
+  z-index: 999;
+}
+
+.navbar-links.active {
+  left: 0;
+}
+
+.navbar-links ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  width: 100%;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color: var(--white);
+  padding: 1rem;
+  transition: all 0.4s ease;
+  font-size: 1.125rem;
+  font-family: var(--f1);
+}
+
+.navbar-links li a:hover {
+  color: var(--light-gray);
+  background-color: var(--ham-hover);
+}
+
+.toggle-button {
+  display: flex;
+  position: absolute;
+  top: 1.3rem;
+  right: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  height: 2.5px;
+  width: 100%;
+  background-color: var(--white);
+  border-radius: 10px;
+  transition: all 0.4s ease-in-out;
+}
+
+.bar:nth-child(1) {
+  width: 60%;
+}
+
+.bar:nth-child(3) {
+  width: 60%;
+  margin-left: auto;
+}
+
+.toggle-button.active .bar:nth-child(1) {
+  height: 4px;
+  width: 100%;
+  transform: translateY(8px) rotate(45deg);
+}
+
+.toggle-button.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.toggle-button.active .bar:nth-child(3) {
+  height: 4px;
+  width: 100%;
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+/* md */
+@media (min-width: 768px) {
+  .toggle-button {
+    display: none;
+  }
+
+  .navbar-links {
+    width: auto;
+    display: flex;
+    background-color: transparent;
+    position: static;
+  }
+
+  .navbar-links ul {
+    flex-direction: row;
+    margin-right: 5.55rem;
+    width: -100%;
+  }
+
+  .navbar-links li {
+    margin-left: 1rem;
+  }
+
+  .navbar-links li:first-child {
+    margin-left: 0;
+  }
+}

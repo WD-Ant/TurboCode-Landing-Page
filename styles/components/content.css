@@ -1,0 +1,69 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.content h1 {
+  font-family: var(--f1);
+  text-align: center;
+  font-size: 1.75rem;
+}
+
+.content p {
+  font-family: var(--f2);
+  font-size: 1.25rem;
+}
+
+.content button {
+  margin-top: 1.25rem;
+  width: 165px;
+  height: 100px;
+  font-size: 1.125rem;
+}
+
+.language-container i {
+  font-size: var(--icon-size);
+  color: var(--blue);
+  margin-bottom: 1.563rem;
+  transition: transform 0.5s ease;
+}
+
+.language-container i:hover {
+  cursor: pointer;
+  transform: scale(1.25);
+}
+
+.language-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 1.25rem;
+}
+
+.java-container,
+.javascript-container,
+.python-container,
+.swift-container,
+.php-container {
+  background-color: #dadada;
+  border-radius: 15px;
+  width: 115px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.java-container p,
+.javascript-container p,
+.python-container p,
+.swift-container p,
+.php-container p {
+  position: absolute;
+  margin-bottom: -2.813rem;
+}

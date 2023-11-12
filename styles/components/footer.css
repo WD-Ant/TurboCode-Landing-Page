@@ -1,0 +1,77 @@
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: var(--blue);
+  height: 90px;
+}
+
+.social-container {
+  color: var(--white);
+  font-size: 1.563rem;
+  display: flex;
+  gap: 15px;
+  margin-top: 0.625rem;
+  margin-right: 1.563rem;
+}
+
+.social-container i {
+  transition: 0.3s ease-in-out;
+}
+
+.social-container i:hover {
+  cursor: pointer;
+  color: rgb(205, 205, 205);
+}
+
+.social-container i:not(:hover) {
+  transition-delay: 0s;
+}
+
+.line1 {
+  position: absolute;
+  margin: -0.313rem 7.188rem;
+}
+
+.line2 {
+  position: absolute;
+  margin: 1.063rem 7.188rem;
+}
+
+.misc-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.faq {
+  font-size: 1.125rem;
+  margin-top: 0.625rem;
+  color: var(--white);
+  font-family: var(--f2);
+  transition: 0.3s ease-in-out;
+}
+
+.contact {
+  font-size: 1.125rem;
+  margin-top: 0.188rem;
+  color: var(--white);
+  font-family: var(--f2);
+  transition: 0.3s ease-in-out;
+}
+
+.copyright h1:hover {
+  cursor: pointer;
+  color: rgb(205, 205, 205);
+}
+
+.copyright h1:not(:hover) {
+  transition-delay: 0s;
+}
+
+.copyright p {
+  position: absolute;
+  margin-top: 3.75rem;
+  font-size: 1.125rem;
+  color: var(--white);
+  font-family: var(--f2);
+  font-weight: 300;
+}

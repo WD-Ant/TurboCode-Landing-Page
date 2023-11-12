@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="webicon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TurboCode</title>
+  </head>
+  <body>
+
+    <div class="loader"></div>
+
+    <section class="nav-wrapper">
+      <nav class="navbar container">
+        <div class="brand-title" onclick="window.location.href='#'"><img src="icon.png"></div>
+        <div class="toggle-button"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="index.html">Courses</a></li>
+            <li><a href="index.html">Sign Up</a></li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+
+    <section class="hero container">
+      <div class="parallax"><img src="parallax.jpg"></div>
+      <div class="hero-content">
+        <h1> TurboCode </h1>
+        <p> Simplify Coding. Accelerate Learning. TurboCode. </p><button class = "btn" onclick="window.location.href='index.html'"> Join us today! </button>
+      </div>
+    </section>
+
+    <section class="about container" id="about">
+      <div class="text-container">
+        <h1> Our Mission </h1>
+        <p> At <span>TurboCode</span>, we are passionate about making coding accessible and enjoyable <span>for everyone.</span> We believe that learning to code shouldn't be a daunting task but an exciting journey of <span>discovery and empowerment.</span></p><br>
+        <p> Our team consists of experienced coding educators who understand the challenges beginners face when starting their coding journey. We are dedicated to simplifying complex coding concepts and providing <span>bite-sized lessons that are easy to understand and apply.</span></p><br>
+        <p> With TurboCode, you can expect a <span>supportive and engaging learning environment.</span> We are committed to providing <span>high-quality coding education</span> that equips you with the fundamental skills to pursue your coding aspirations. Whether you are a complete beginner or looking to expand your coding knowledge, we are here to guide you every step of the way. </p><br>
+        <p> Join our community of learners and embark on a coding adventure with TurboCode. Together, let's unlock the world of programming and shape a future driven by <span>innovation and creativity.</span></p>
+      </div>
+    </section>
+
+    <main class="content container">
+      <h1> Programming languages that we provide! </h1>
+      <!-- Icons when clicked on, go to their respective sections in langs.html -->
+      <div class="language-container">
+        <div class="java-container">
+          <i class="fa-brands fa-java"></i>
+          <p> Java </p>
+        </div>
+        <div class="python-container">
+          <i class="fa-brands fa-python"></i>
+          <p> Python </p>
+        </div>
+        <div class="javascript-container">
+          <i class="fa-brands fa-square-js"></i>
+          <p> JavaScript </p>
+        </div>
+        <div class="swift-container">
+          <i class="fa-brands fa-swift"></i>
+          <p> Swift </p>
+        </div>
+        <div class="php-container">
+          <i class="fa-brands fa-php"></i>
+          <p> PHP </p>
+        </div>
+      </div>
+      <button class = "btn" onclick="window.location.href='index.html'"> Learn More! </button>
+    </main>
+
+    <section class="testimonials container">
+      <h1>TESTIMONIALS</h1>
+      <p>See what our users say about TurboCode!</p>
+      <div class="card-wrapper">
+        <div class="card1 card">
+          <i class="fa-solid fa-quote-left"></i>
+          <img src="stock1.jpg">
+          <p>TurboCode is a game-changer! Their bite-sized lessons and supportive community made coding fun and accessible. Thanks to them, I'm now confident in my coding skills. <br>
+            <span>-Malik Adams</span>
+          </p>
+        </div>
+        <div class="card2 card">
+          <i class="fa-solid fa-quote-left"></i>
+          <img src="stock2.webp">
+          <p>Joining TurboCode was the best decision I made! The instructors are top-notch, and the engaging learning environment made me fall in love with coding. <br>
+            <span>-Steven Chen</span>
+          </p>
+        </div>
+        <div class="card3 card">
+          <i class="fa-solid fa-quote-left"></i>
+          <img src="stock3.jpg">
+          <p>TurboCode's approach to teaching coding is unparalleled. They simplified complex concepts and made coding feel like a breeze. I'm forever grateful for the skills I gained! <br>
+            <span>-Luis Hernandez</span>
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <section class="sign-up-box container2" id="signup">
+      <div class="sign-item signs-text">
+        <h2>Make sure to sign up!</h2>
+        <p>Join TurboCode Now and TurboCharge Your Coding Skills!</p>
+      </div>
+      <div class="sign-item signs-button">
+        <button class = "btn" onclick="window.location.href='index.html'"> Sign Up </button>
+      </div>
+    </section>
+    
+    <footer class="copyright container">
+      <div class="social-container">
+        <i class="fa-brands fa-github" onclick="window.open('https://github.com/WD-Ant','_blank')"></i>
+        <i class="fa-brands fa-youtube" onclick="window.open('https://www.youtube.com/channel/UCt-IUqyMIZHOPqVFmIi_y_Q')"></i>
+        <i class="fa-brands fa-instagram" onclick="window.open('https://www.instagram.com/sir._.hoang/?next=%2F')"></i>
+        <span class="line1">|</span>
+        <span class="line2">|</span>
+      </div>
+      <div class="misc-container">
+        <h1 class="faq" onclick="window.location.href='index.html'"> FAQ </h1>
+        <h1 class="contact" onclick="window.location.href='index.html'"> Contact Us </h1>
+      </div>
+      <p> Copyright © TurboCode Corp. </p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/32db83fee2.js" crossorigin="anonymous"></script>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
