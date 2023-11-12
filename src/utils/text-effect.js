@@ -1,3 +1,4 @@
+// Credit to Hyperplexed
 const textEffect = () => {
   const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   let _interval = null;
